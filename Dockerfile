@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 #Install necessary packages 
-RUN apt-get update && apt-get install python3 python3-pip
+RUN apt-get update -y && apt-get install python3 python3-pip -y
 
 #Set environment variables
 ENV NAME world
